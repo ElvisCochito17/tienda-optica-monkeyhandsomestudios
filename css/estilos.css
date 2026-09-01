@@ -1,0 +1,29 @@
+@import url(cabecera.css);
+
+* {
+    margin: 0.5;
+    padding: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Lentes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-lentes img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.tarjeta-lentes {
+    background-color: #f2f2f2;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
