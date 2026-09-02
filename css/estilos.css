@@ -1,29 +1,86 @@
 @import url(cabecera.css);
+@import url(menu.css);
+@import url(pie.css     );
 
 * {
-    margin: 0.5;
-    padding: 0.5;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-image: url(../img/Fondo1.jpg) ;
+}
+
+
+.Bienvenida{
+    padding: 0 40px;
+    margin: 20px;
+}
 .Lentes {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
+    margin: 40px;
 }
 
 .tarjeta-lentes img{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 15px;
+    background-color: white;
 }
 
 .tarjeta-lentes {
-    background-color: #f2f2f2;
+    background-color: white;
     color: black;
-    padding: 15px;
+    width: 240px;
+    padding: 20px 15px;
     border-radius: 15px;
     text-align: center;
     transition: transform 0.3s ease;
+}
+
+.tarjeta-lentes h4{
+    color: black;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.tarjeta-lentes p{
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.btn-ver{
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-ver:hover{
+    background-color: dimgray;
+}
+
+/* Si es pantalla de PC (grande) */
+@media (min-width: 769px) {
+  body {
+    background-image: url('../img/Fondo3.jpg');
+    background-size: cover;
+  }
+}
+
+/* Si es pantalla de celular (chica) */
+@media (max-width: 480px) {
+  body {
+    background-image: none;      /* Quita la foto pesada */
+    background-color: lightgray; /* Deja un fondo gris simple */
+  }
 }
