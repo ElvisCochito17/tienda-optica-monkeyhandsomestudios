@@ -1,0 +1,76 @@
+/* Tarjeta blanca centrada */
+.Formulario-contenedor {
+    background-color: rgba(22, 21, 21, 0);
+    max-width: 650px;
+    margin: 50px ;
+    padding: 7px;
+    margin-top: 5px;
+    border-radius: 16px;
+}
+
+.Formulario-contenedor table {
+    width: 100%;
+}
+
+.Formulario-contenedor td {
+    padding: 5px 3px;
+    font-size: 17px;
+}
+
+/* Hace que las cajas de texto sean más anchas y cómodas */
+.Formulario-contenedor input[type="email"],
+.Formulario-contenedor input[type="text"],
+.Formulario-contenedor input[type="number"],
+.Formulario-contenedor textarea,
+.Formulario-contenedor select {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 15px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-enviar{
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+.btn-enviar:hover{
+    background-color: dimgray;
+}
+
+.btn-limpiar{
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+.btn-limpiar:hover{
+    background-color: dimgray;
+}
+
+.btn-secundario{
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
