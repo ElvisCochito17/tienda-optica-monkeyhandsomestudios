@@ -15,6 +15,34 @@ body {
 
 }
 
+.detalles-producto {
+  list-style: none;         /* Quita los puntos negros */
+  padding: 0 15px;          /* Margen lateral para no chocar con los bordes */
+  margin: 15px 0;
+  font-size: 0.8rem;        /* Texto más pequeño para no competir con el título */
+  color: #555;
+  text-align: left;         /* La ficha técnica se lee mejor alineada a la izquierda */
+}
+
+.detalles-producto li {
+  padding: 5px 0;
+  border-bottom: 1px dashed #e0e0e0; /* Línea tenue divisoria */
+}
+
+.detalles-producto strong {
+  color: #222;
+}
+
+body {
+  min-height: 100vh;           /* Obliga a la página a medir el 100% del alto de la pantalla */
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+}
+
+main {
+  flex: 1;                     /* Hace que el contenido del medio crezca y empuje el footer al fondo */
+}
 
 .Bienvenida{
     padding: 0 40px;

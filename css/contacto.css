@@ -31,6 +31,9 @@
     box-sizing: border-box;
 }
 
+textarea {
+    resize: none; /* Permite cambiar el tamaño verticalmente */ /* Altura mínima */
+}
 .btn-enviar{
     text-decoration: none;
     background-color:black;
