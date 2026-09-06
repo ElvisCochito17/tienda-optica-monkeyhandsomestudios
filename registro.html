@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Llama la optica</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>Llama la optica</header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="quienes_somos.html">Quienes Somos</a></li>
+            <li><a href="login.html">Usuarios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="Bienvenida">
+            <h1>Crea tu cuenta con nosotros</h1>
+            <p>Por favor complete el siguiente formulario para registrarse en la plataforma.</p>
+        </div>
+        
+        <section>
+            <div class="Formulario-contenedor">
+                <form action="" method="post">
+                    <table>
+                        <tr>
+                            <td>Nombre completo:</td>
+                            <td>
+                                <input type="text" name="nombre" id="txtNombre" required placeholder="ingrese nombre">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Correo:</td>
+                            <td>
+                                <input type="email" name="email" id="txtEmailReg" required placeholder="ingrese email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edad:</td>
+                            <td>
+                                <input type="number" name="edad" id="txtEdadReg" min="18" max="120" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Contraseña:</td>
+                            <td>
+                                <input type="password" name="password" id="txtPass1" required placeholder="ingrese contraseña">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Confirmar Contraseña:</td>
+                            <td>
+                                <input type="password" name="password_conf" id="txtPass2" required placeholder="confirme contraseña">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="fila-botones">
+                                <input type="reset" value="Limpiar" class="btn-limpiar">
+                                <input type="submit" value="Registrar" class="btn-enviar">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
