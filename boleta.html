@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llama la Optica MonkeyHandsomeStudios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/pedido.css">
+
+</head>
+<body>
+    <header>Llama la optica</header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"></a></li>
+            <li><a href="catalogo.html"></a></li>
+            <li><a href="quienes_somos.html"></a></li>
+            <li><a href="login.html"></a></li>
+            <li><a href="contacto.html"></a></li>
+            <li><a href="pedido.html"></a></li>
+        </ul>
+    </nav>
+
+    <div class="boleta-contenedor">
+        <!-- Encabezado de la empresa -->
+        <div class="boleta-cabecera">
+            <h1>Llama la Optica</h1>
+            <p>RUT: 76.543.210-K<br>Av. Los Lentes 123, Santiago</p>
+            <p class="boleta-numero"><strong>BOLETA ELECTRÓNICA N° 10024</strong><br>Fecha: 06/09/2026</p>
+        </div>
+
+        <!-- Detalle de productos del catálogo -->
+        <table class="boleta-tabla">
+            <thead>
+                <tr>
+                    <th>Cant.</th>
+                    <th>Descripción (Catálogo)</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Lentes de mujer metálicos + Estuche</td>
+                    <td>$ 26.990</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Tarifa de servicio</td>
+                    <td>$ 2.990</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Totales -->
+        <div class="boleta-totales">
+            <p><strong>TOTAL: $ 29.980</strong></p>
+        </div>
+
+        <div class="boleta-pie">
+            <p>Gracias por tu compra en Llama la Optica.</p>
+        </div>
+
+        <!-- Botón mágico que activa la función de PDF/Imprimir del navegador -->
+        <button onclick="window.print()" class="btn-imprimir">🖨️ Guardar como PDF o Imprimir</button>
+    </div>
+
+</body>
+</html>

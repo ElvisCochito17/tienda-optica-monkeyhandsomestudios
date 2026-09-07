@@ -2,6 +2,7 @@
 @import url(menu.css);
 @import url(pie.css     );
 @import url(contacto.css);
+@import url(pedido.css);
 
 * {
     margin: 0;
