@@ -7,12 +7,41 @@
 @import url(catalogo.css);
 
 * {
-    margin: 0;
+     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  /* 1. Menú de navegación: pasa de horizontal a lista vertical centrada */
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
 
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+  }
+
+  /* 2. Catálogo: si tienes tarjetas de productos, se acomodan solas */
+  .contenedor-tarjetas,
+  .catalogo-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna en celular en vez de 3 o 4 */
+    gap: 20px;
+    padding: 10px;
+  }
+
+  /* 3. Evita desbordes horizontales de imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 body {
     background-color: lightgray;
 

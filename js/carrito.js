@@ -33,7 +33,7 @@ if (mensaje && listaLentes.length > 0) {
 document.querySelectorAll('.btn-agregar').forEach(boton => {
   boton.addEventListener('click', () => {
     const tarjeta = boton.closest('.tarjeta-lentes');
-    const nombreLente = tarjeta.querySelector('h4').textContent.trim();
+    const nombreLente = tarjeta ? tarjeta.querySelector('h4').textContent.trim() : 'Lente';
 
     listaLentes.push(nombreLente);
     localStorage.setItem('nombresLentes', JSON.stringify(listaLentes));
@@ -58,9 +58,26 @@ if (btnRestar) {
   });
 }
 
-// Limpia el storage al enviar el formulario
-function validacionFormulario() {
-  alert('Cotización enviada correctamente.');
+// Genera resumen y evita el error 405 cancelando la recarga
+function validacionFormulario(event) {
+  if (event) {
+    event.preventDefault();
+  }
+
+  const correo = document.getElementById('txtEmail').value;
+  const asunto = document.getElementById('txtAsunto').value;
+  const pedido = document.getElementById('txtMensaje').value;
+
+  const resumen = `¡Cotización enviada con éxito!\n\nCliente: ${correo}\nAsunto: ${asunto}\nDetalle:\n${pedido}`;
+  alert(resumen);
+
+  // Limpia el carrito
   localStorage.removeItem('nombresLentes');
-  return true;
+  listaLentes = [];
+  actualizarContador();
+
+  // Limpia los campos del formulario en pantalla
+  document.querySelector('form').reset();
+
+  return false;
 }
