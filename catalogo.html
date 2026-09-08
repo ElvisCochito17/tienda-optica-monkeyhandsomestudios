@@ -7,17 +7,24 @@
     <link rel="stylesheet" href="css/estilos.css"> 
   </head>
   <body >
-    <header>Llama la optica</header>
 
     <nav>
+    <div class="marca">
+        <img src="img/logo.png" alt="Logo de la tienda" class="logo">
+        <span>Llama la Optica</span>
+    </div>  
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="catalogo.html">Catalogo</a></li>
         <li><a href="quienes_somos.html">Quienes Somos</a></li>
         <li><a href="login.html">Login</a></li>
         <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-
+        <li><a href="blog.html">Blog</a></li>
+        <li>
+        <a href="contacto.html" class="btn-carrito-nav">
+    🛒 Carrito <span id="contador-carrito" class="badge">0</span>
+        </a>
+        </li>
       </ul>
     </nav>
 
@@ -30,64 +37,143 @@
             experiencia en el uso diario</p>
         </div>
              <!-- Tarjetas de lentes, introduciendo al catálogo -->
-     <section>
+<section>
         <div class="Lentes">
             
+            <!-- Tarjeta 1 -->
             <div class="tarjeta-lentes">
-                <img src="img/Lentes1.jpg" alt="">
+                <img src="img/Lentes1.jpg" alt="Lentes de mujer metalicos">
                 <h4>Lentes de mujer metalicos</h4>
                 <p>Precio: $29.990</p>
-                <a href="contacto.html" class="btn-ver">Cotizar</a>
+                <ul class="detalles-producto">
+                    <li><strong>Material:</strong> Metal resistente</li>
+                    <li><strong>Protección:</strong> Filtro UV400 / Antirreflejo</li>
+                    <li><strong>Ideal para:</strong> Rostros ovalados y redondos</li>
+                </ul>
+                <div class="acciones-producto">
+                    <a href="contacto.html" class="btn-ver">Cotizar</a>
+                    <button class="btn-agregar" data-nombre="Lentes de mujer metalicos" data-precio="29990">+ Añadir</button>
+                </div>
             </div>
-                <div class="tarjeta-lentes">
-                <img src="img/Lentes2.jpg" alt="">
+
+            <!-- Tarjeta 2 -->
+            <div class="tarjeta-lentes">
+                <img src="img/Lentes2.jpg" alt="Lentes de hombre sencillos">
                 <h4>Lentes de hombre sencillos</h4>
                 <p>Precio: $39.990</p>
-                <a href="contacto.html" class="btn-ver">Cotizar</a>
+                <ul class="detalles-producto">
+                    <li><strong>Material:</strong> Plástico resistente</li>
+                    <li><strong>Protección:</strong> Filtro UV400 / Antirreflejo</li>
+                    <li><strong>Ideal para:</strong> Rostros ovalados y redondos</li>
+                </ul>
+                <div class="acciones-producto">
+                    <a href="contacto.html" class="btn-ver">Cotizar</a>
+                    <button class="btn-agregar" data-nombre="Lentes de hombre sencillos" data-precio="39990">+ Añadir</button>
+                </div>
             </div>
+
+            <!-- Tarjeta 3 -->
             <div class="tarjeta-lentes">
-                <img src="img/Lentes3.jpg" alt="">
+                <img src="img/Lentes3.jpg" alt="Lentes de mujer de sol con diseño">
                 <h4>Lentes de mujer de sol con diseño</h4>
                 <p>Precio: $49.990</p>
-                <a href="contacto.html" class="btn-ver">Cotizar</a>
+                <ul class="detalles-producto">
+                    <li><strong>Material:</strong> Plástico resistente</li>
+                    <li><strong>Protección:</strong> Filtro UV400 / Antirreflejo</li>
+                    <li><strong>Ideal para:</strong> Rostros ovalados y redondos</li>
+                </ul>
+                <div class="acciones-producto">
+                    <a href="contacto.html" class="btn-ver">Cotizar</a>
+                    <button class="btn-agregar" data-nombre="Lentes de mujer de sol con diseño" data-precio="49990">+ Añadir</button>
+                </div>
             </div>
 
+            <!-- Tarjeta 4 (Ruta corregida: Lentes3.jpg) -->
             <div class="tarjeta-lentes">
-                <img src="img/Lentes4.jpg" alt="">
+                <img src="img/Lentes3.jpg" alt="Lentes de hombre de sol con diseño">
                 <h4>Lentes de hombre de sol con diseño</h4>
                 <p>Precio: $59.990</p>
-                <a href="contacto.html" class="btn-ver">Cotizar</a>
+                <ul class="detalles-producto">
+                    <li><strong>Material:</strong> Plástico resistente</li>
+                    <li><strong>Protección:</strong> Filtro UV400 / Antirreflejo</li>
+                    <li><strong>Ideal para:</strong> Rostros ovalados y redondos</li>
+                </ul>
+                <div class="acciones-producto">
+                    <a href="contacto.html" class="btn-ver">Cotizar</a>
+                    <button class="btn-agregar" data-nombre="Lentes de hombre de sol con diseño" data-precio="59990">+ Añadir</button>
+                </div>
             </div>
+
+            <!-- Tarjeta 5 -->
             <div class="tarjeta-lentes">
-                <img src="img/Lentes5.jpg" alt="">
+                <img src="img/Lentes1.jpg" alt="Lentes de mujer de sol con diseño">
                 <h4>Lentes de mujer de sol con diseño</h4>
                 <p>Precio: $69.990</p>
-                <a href="contacto.html" class="btn-ver">Cotizar</a>
+                <ul class="detalles-producto">
+                    <li><strong>Material:</strong> Plástico resistente</li>
+                    <li><strong>Protección:</strong> Filtro UV400 / Antirreflejo</li>
+                    <li><strong>Ideal para:</strong> Rostros ovalados y redondos</li>
+                </ul>
+                <div class="acciones-producto">
+                    <a href="contacto.html" class="btn-ver">Cotizar</a>
+                    <button class="btn-agregar" data-nombre="Lentes de mujer de sol con diseño" data-precio="69990">+ Añadir</button>
+                </div>
             </div>    
+
+            <!-- Tarjeta 6 -->
             <div class="tarjeta-lentes">
-                <img src="img/Lentes6.jpg" alt="">
+                <img src="img/Lentes2.jpg" alt="Lentes de hombre de sol con diseño">
                 <h4>Lentes de hombre de sol con diseño</h4>
                 <p>Precio: $79.990</p>
-                <a href="contacto.html" class="btn-ver">Cotizar</a>
+                <ul class="detalles-producto">
+                    <li><strong>Material:</strong> Plástico resistente</li>
+                    <li><strong>Protección:</strong> Filtro UV400 / Antirreflejo</li>
+                    <li><strong>Ideal para:</strong> Rostros ovalados y redondos</li>
+                </ul>
+                <div class="acciones-producto">
+                    <a href="contacto.html" class="btn-ver">Cotizar</a>
+                    <button class="btn-agregar" data-nombre="Lentes de hombre de sol con diseño" data-precio="79990">+ Añadir</button>
+                </div>
             </div>
+
+            <!-- Tarjeta 7 -->
             <div class="tarjeta-lentes">
-                <img src="img/Lentes7.jpg" alt="">
+                <img src="img/Lentes2.jpg" alt="Lentes de mujer de sol con diseño">
                 <h4>Lentes de mujer de sol con diseño</h4>
                 <p>Precio: $89.990</p>
-                <a href="contacto.html" class="btn-ver">Cotizar</a>
+                <ul class="detalles-producto">
+                    <li><strong>Material:</strong> Plástico resistente</li>
+                    <li><strong>Protección:</strong> Filtro UV400 / Antirreflejo</li>
+                    <li><strong>Ideal para:</strong> Rostros ovalados y redondos</li>
+                </ul>
+                <div class="acciones-producto">
+                    <a href="contacto.html" class="btn-ver">Cotizar</a>
+                    <button class="btn-agregar" data-nombre="Lentes de mujer de sol con diseño" data-precio="89990">+ Añadir</button>
+                </div>
             </div>
+
+            <!-- Tarjeta 8 -->
             <div class="tarjeta-lentes">
-                <img src="img/Lentes8.jpg" alt="">
+                <img src="img/Lentes3.jpg" alt="Lentes de hombre de sol con diseño">
                 <h4>Lentes de hombre de sol con diseño</h4>
                 <p>Precio: $99.990</p>
-                <a href="contacto.html" class="btn-ver">Cotizar</a>
+                <ul class="detalles-producto">
+                    <li><strong>Material:</strong> Plástico resistente</li>
+                    <li><strong>Protección:</strong> Filtro UV400 / Antirreflejo</li>
+                    <li><strong>Ideal para:</strong> Rostros ovalados y redondos</li>
+                </ul>
+                <div class="acciones-producto">
+                    <a href="contacto.html" class="btn-ver">Cotizar</a>
+                    <button class="btn-agregar" data-nombre="Lentes de hombre de sol con diseño" data-precio="99990">+ Añadir</button>
+                </div>
             </div>
-         </div>
 
-     </section>
+        </div>
+      </section>
     </main>
     <footer>
         2024 Llama la Optica. Todos los derechos reservados.
     </footer>
+    <script src="js/carrito.js"></script>
 </body>
-</html>
+</html> 

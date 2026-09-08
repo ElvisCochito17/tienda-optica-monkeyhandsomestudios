@@ -1,81 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactenos </title>
+    <title>Contáctenos</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
-        <header>Llama la optica</header>
-    
+<body>  
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="catalogo.html">Catalogo</a></li>
-        <li><a href="quienes_somos.html">Quienes Somos</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <div class="marca">
+            <img src="img/logo.png" alt="Logo de la tienda" class="logo">
+            <span>Llama la Optica</span>
+        </div>  
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="quienes_somos.html">Quienes Somos</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li>
+                <a href="contacto.html" class="btn-carrito-nav">
+                    🛒 Carrito <span id="contador-carrito" class="badge">0</span>
+                </a>
+            </li>
         </ul>
-      </ul>
     </nav>
- <main>
-  <div class="Bienvenida">
-    <h1>Cotiza o haz tu consulta con nosotros</h1>
-    <p>Por favor diligencie el siguiente formulario para poder contactarlo y enviarle su cotización.</p>
-  </div>     
 
-  <section>
-    <div class="Formulario-contenedor">
-      <form action="" method="post" onsubmit="return validacionFormulario()">
-        <table>
-          <tr>
-            <td>Correo:</td>
-            <td>
-              <input type="email" name="email" id="txtEmail" required placeholder="ingrese email">
-            </td>
-          </tr>
-          <tr>
-            <td>Nombre del Producto:</td>
-       
-            <td>
-              <input type="text" name="asunto" id="txtAsunto" minlength="3" required placeholder="ingrese asunto">
-            </td>
-          </tr>
-          <tr>
-            <td>Cotización:</td>
-            <td>
-              <textarea name="mensaje" id="txtMensaje" cols="30" rows="6" required minlength="5" placeholder="Detalles o receta..."></textarea>
-            </td>
-          </tr>
-          <tr>
-            <td>Edad:</td>
-            <td>
-              <input type="number" name="edad" id="txtEdad" min="1" max="120" required>
-            </td>
-          </tr>
-          <tr>
-            <td>Sexo:</td>
-            <td>
-              <select name="sexo" id="cboSexo" required>
-                <option value="" selected>Seleccione...</option>
-                <option value="F">Femenino</option>
-                <option value="M">Masculino</option>
-                <option value="O">Otro</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" class="fila-botones">
-              <input type="reset" value="Limpiar" class="btn-limpiar">
-              <input type="submit" value="Enviar" class="btn-enviar">
-              <input type="button" value="Listar" onclick="listar()" class="btn-secundario">               
-            </td>              
-          </tr>
-        </table>
-      </form>
-    </div>
-  </section>
- </main>
+    <main>
+        <div class="Bienvenida">
+            <h1>Cotiza o haz tu consulta con nosotros</h1>
+            <p>Por favor diligencie el siguiente formulario para poder contactarlo y enviarle su cotización.</p>
+        </div>     
+
+        <section>
+            <div class="Formulario-contenedor">
+                <form action="" method="post" onsubmit="return validacionFormulario(event)">
+                    <table>
+                        <tr>
+                            <td>Correo:</td>
+                            <td>
+                                <input type="email" name="email" id="txtEmail" required placeholder="ingrese email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Asunto + Nombre:</td>
+                            <td>
+                                <input type="text" name="asunto" id="txtAsunto" minlength="3" required placeholder="ingrese asunto">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cotización:</td>
+                            <td>
+                                <textarea name="mensaje" id="txtMensaje" cols="30" rows="6" required minlength="5" placeholder="Detalles o receta..."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edad:</td>
+                            <td>
+                                <input type="number" name="edad" id="txtEdad" min="1" max="120" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sexo:</td>
+                            <td>
+                                <select name="sexo" id="cboSexo" required>
+                                    <option value="" selected>Seleccione...</option>
+                                    <option value="F">Femenino</option>
+                                    <option value="M">Masculino</option>
+                                    <option value="O">Otro</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="fila-botones">
+                                <input type="reset" value="Limpiar" class="btn-limpiar">
+                                <input type="submit" value="Enviar" class="btn-enviar">
+                                <button type="button" id="btnRestar" class="btn-secundario">Quitar lente</button>
+                                <input type="button" value="Listar" onclick="listar()" class="btn-secundario">              
+                            </td>              
+                        </tr>
+                    </table>  
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        2024 Llama la Optica. Todos los derechos reservados.
+    </footer>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

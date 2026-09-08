@@ -1,65 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Llama la Optica MonkeyHandsomeStudios</title>
+    <title>Llama la Optica</title>
     <link rel="stylesheet" href="css/estilos.css">
-    
 </head>
 <body>
-    <!-- Cabecera -->
-    <header>Llama la optica, tus lentes irán a ti</header>
 
-    <!-- barra de navegacion -->
+    <!-- Barra de navegacion -->
     <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Productos</a></li>
+        <div class="marca">
+            <img src="img/logo.png" alt="Logo de la tienda" class="logo">
+            <span>Llama la Optica</span>
+        </div>
+
+        <ul>    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
             <li><a href="quienes_somos.html">Quienes Somos</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li>
+                <a href="contacto.html" class="btn-carrito-nav">
+                    🛒 Carrito <span id="contador-carrito" class="badge">0</span>
+                </a>
+            </li>
         </ul>
     </nav>
+
     <!-- Contenido principal -->
     <main>
+        <!-- Bienvenida -->
+        <section>
+            <div class="Bienvenida">
+                <h2>Bienvenido a Llama la Optica</h2>
+                <p>En llama la optica contamos con un servicio 
+                   personalizado para ayudarte a encontrar
+                   los lentes que necesitas que mejoren tu
+                   experiencia en el uso diario.</p>
+            </div>
+        </section>
 
-    <!-- Contenido inicial-->
-     <section>
-        <div class="Bienvenida">
-        <h2>Bienvenido a Llama la Optica</h2>
-        <p> En llama la optica contamos con un servicio 
-            personalizado para ayudarte a encontrar
-            los lentes que necesitas que mejoren tu
-            experiencia en el uso diario</p>
-        </div>
-     </section>
-     <!-- Tarjetas de lentes, introduciendo al catálogo -->
-     <section>
-        <div class="Lentes">
-            
-            <div class="tarjeta-lentes">
-                <img src="img/Lentes1.jpg" alt="">
-                <h4>Lentes de mujer metalicos</h4>
-                <p>Precio: $29.990</p>
-                <a href="catalogo.html" class="btn-ver">Ver más</a>
-            </div>
+        <!-- Destacados (3 productos centrados) -->
+        <section>
+            <div class="Lentes destacados">
+                
                 <div class="tarjeta-lentes">
-                <img src="img/Lentes2.jpg" alt="">
-                <h4>Lentes de hombre sencillos</h4>
-                <p>Precio: $39.990</p>
-                <a href="catalogo.html" class="btn-ver">Ver más</a>
-            </div>
-            <div class="tarjeta-lentes">
-                <img src="img/Lentes3.jpg" alt="">
-                <h4>Lentes de mujer de sol con diseño</h4>
-                <p>Precio: $49.990</p>
-                <a href="catalogo.html" class="btn-ver">Ver más</a>
+                    <img src="img/Lentes1.jpg" alt="Lentes de mujer metalicos">
+                    <h4>Lentes de mujer metalicos</h4>
+                    <p>Precio: $29.990</p>
+                    <ul class="detalles-producto">
+                        <li><strong>Material:</strong> Aleación metálica</li>
+                        <li><strong>Protección:</strong> Filtro UV400 / Antirreflejo</li>
+                        <li><strong>Ideal para:</strong> Rostros ovalados y redondos</li>
+                    </ul>
+                    <a href="catalogo.html" class="btn-ver">Ver más</a>
+                </div>
+
+                <div class="tarjeta-lentes">
+                    <img src="img/Lentes2.jpg" alt="Lentes de hombre sencillos">
+                    <h4>Lentes de hombre sencillos</h4>
+                    <p>Precio: $39.990</p>
+                    <ul class="detalles-producto">
+                        <li><strong>Material:</strong> Plástico resistente</li>
+                        <li><strong>Protección:</strong> Filtro UV400 / Antirreflejo</li>
+                        <li><strong>Ideal para:</strong> Rostros cuadrados y rectangulares</li>
+                    </ul>
+                    <a href="catalogo.html" class="btn-ver">Ver más</a>
+                </div>
+
+                <div class="tarjeta-lentes">
+                    <img src="img/Lentes3.jpg" alt="Lentes de mujer de sol con diseño">
+                    <h4>Lentes de mujer de sol con diseño</h4>
+                    <p>Precio: $49.990</p>
+                    <ul class="detalles-producto">
+                        <li><strong>Material:</strong> Acetato de alta calidad</li>
+                        <li><strong>Protección:</strong> Filtro UV400 / Antirreflejo</li>
+                        <li><strong>Ideal para:</strong> Rostros ovalados y triangulares</li>
+                    </ul>
+                    <a href="catalogo.html" class="btn-ver">Ver más</a>
+                </div>
+
             </div>    
-     </section>
+        </section>
     </main>
+
     <footer>
         2024 Llama la Optica. Todos los derechos reservados.
     </footer>
+
+    <script src="js/carrito.js"></script>
 </body>
 </html>

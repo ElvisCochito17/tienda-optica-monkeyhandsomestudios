@@ -2,83 +2,64 @@
 @import url(menu.css);
 @import url(pie.css     );
 @import url(contacto.css);
+@import url(blog.css);
+@import url(carrito.css);
+@import url(catalogo.css);
 
 * {
-    margin: 0;
+     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  /* 1. Menú de navegación: pasa de horizontal a lista vertical centrada */
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
 
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+  }
+
+  /* 2. Catálogo: si tienes tarjetas de productos, se acomodan solas */
+  .contenedor-tarjetas,
+  .catalogo-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna en celular en vez de 3 o 4 */
+    gap: 20px;
+    padding: 10px;
+  }
+
+  /* 3. Evita desbordes horizontales de imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 body {
     background-color: lightgray;
 
 }
 
+body {
+  min-height: 100vh;           /* Obliga a la página a medir el 100% del alto de la pantalla */
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+}
 
+main {
+  flex: 1;                     /* Hace que el contenido del medio crezca y empuje el footer al fondo */
+}
 .Bienvenida{
     padding: 0 40px;
     margin: 20px;
-}
-.Lentes {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    max-width: 1200px; /* Al limitar el ancho, obliga a que solo quepan 4 por fila */
-    margin: 30px auto;
-}
-
-
-.tarjeta-lentes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribuye el espacio para que el botón siempre quede abajo */
-    /* ...mantén el resto de propiedades que ya tienes... */
-}
-
-.tarjeta-lentes img{
-    width: 180px;
-    height: 180px;
-    border-radius: 15px;
-    background-color: white;
-}
-
-.tarjeta-lentes {
-    background-color: white;
-    color: black;
-    width: 240px;
-    padding: 20px 15px;
-    border-radius: 15px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.tarjeta-lentes h4{
-    color: black;
-    margin-bottom: 5px;
-    font-size: 16px;
-}
-
-.tarjeta-lentes p{
-    color: black;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.btn-ver{
-    text-decoration: none;
-    background-color:black;
-    color: white;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.btn-ver:hover{
-    background-color: dimgray;
 }
 
 /* Si es pantalla de PC (grande) */
