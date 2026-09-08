@@ -1,0 +1,206 @@
+/* Contenedor principal centrado y con estilo de tarjeta blanca */
+.contenedor-detalle, 
+.contenedor-pedidos {
+    max-width: 800px;
+    margin: 40px auto; /* Centrado en la pantalla */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra muy suave */
+    font-family: Arial, sans-serif; /* con esta linea puedes cambiar la fuente */
+}
+
+
+.detalle-cabecera {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative; /*cambia la posicion de la cabecera /*
+}
+
+.estado-entregado {
+    color: #00a650; /* Verde estilo éxito */
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.detalle-cabecera h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.btn-ruta {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #000; /* Botón negro y elegante */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-ruta:hover {
+    background-color: #333;
+}
+
+/* =========================================
+   LISTA DE PRODUCTOS
+========================================= */
+.detalle-productos h3,
+.detalle-pago h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.item-producto {
+    display: flex; /* Esto pone los elementos uno al lado del otro */
+    align-items: center; /* Los centra verticalmente */
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.img-item {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover; /* Para que la foto no se deforme */
+    margin-right: 20px;
+    border: 1px solid #eaeaea;
+}
+
+.info-item {
+    flex-grow: 1; /* Esto hace que el texto ocupe todo el espacio sobrante */
+}
+
+.info-item h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.precio-descuento {
+    margin: 0;
+    font-weight: bold;
+    color: #111;
+}
+
+.precio-descuento del {
+    color: #999;
+    font-weight: normal;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.cantidad-item {
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+/* desglode de pago */
+.detalle-pago {
+    margin-top: 30px;
+}
+
+.fila-pago {
+    display: flex;
+    justify-content: space-between; /* Texto a la izq, precio a la der */
+    padding: 8px 0;
+    color: #555;
+}
+
+.fila-pago.total {
+    border-top: 2px solid #f0f0f0;
+    margin-top: 10px;
+    padding-top: 15px;
+    font-size: 18px;
+    color: #111;
+}
+
+.descarga-boleta {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px dashed #ccc; /* Línea punteada para separar */
+}
+
+.btn-boleta {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-boleta:hover {
+    text-decoration: underline;
+}
+
+.tarjeta-resumen-link {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+    margin-bottom: 15px;
+}
+
+/* Alinear todo en una sola fila usando Flexbox */
+.tarjeta-resumen {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: space-between; 
+    padding: 15px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease; /* Pequeña animación */
+}
+
+/* Efecto sombra al pasar el mouse por encima (como botón) */
+.tarjeta-resumen:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+/* =========================================
+   ESTO REDUCE EL TAMAÑO DE TU IMAGEN
+========================================= */
+.tarjeta-icono img {
+    width: 70px;          /* Ancho de la imagen */
+    height: 70px;         /* Alto de la imagen */
+    object-fit: contain;  /* Evita que los lentes se deformen */
+    border-radius: 8px;   /* Bordes ligeramente redondeados */
+    border: 1px solid #eee; /* Borde sutil alrededor de la foto */
+}
+
+/* Acomodar los textos del centro */
+.tarjeta-info {
+    flex-grow: 1; /* Hace que esta parte ocupe todo el espacio central sobrante */
+    padding: 0 20px;
+}
+
+.tarjeta-info h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #111;
+}
+
+.tarjeta-info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.cantidad-productos {
+    color: #666;
+}
+
+/* Precio a la derecha */
+.tarjeta-precio {
+    font-size: 18px;
+}

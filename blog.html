@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Llama la Óptica</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="marca">
+            <img src="img/logo.png" alt="Logo de la tienda" class="logo">
+            <span>Llama la Optica</span>
+        </div>  
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="quienes_somos.html">Quienes Somos</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pedido.html">Pedidos</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li>
+                <a href="contacto.html" class="btn-carrito-nav">
+                    🛒 Carrito <span id="contador-carrito" class="badge">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="Bienvenida">
+            <h1>Bienvenido a nuestro blog</h1>
+            <p>En llama la optica contamos con un servicio 
+                personalizado para ayudarte a encontrar
+                los lentes que necesitas que mejoren tu
+                experiencia en el uso diario</p>
+        </section>
+
+        <section class="info-blog">
+            <!-- Contenedor grid que faltaba abrir -->
+            <div class="contenedor-tarjetas">
+
+                <!-- Tarjeta 1 -->
+                <div class="tarjeta-blog">
+                    <div class="img-wrapper">
+                        <img src="img/blog1.jpg" alt="Cuidado de lentes">
+                    </div>
+                    <div class="contenido">
+                        <h4>Cómo Elegir entre Lentes Progresivos y Bifocales</h4>
+                        <p class="meta">por Admin | Oct 28, 2024 | artículos</p>
+                        <p>La elección entre lentes progresivos y bifocales es una decisión importante para una correcta salud visual diaria.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="tarjeta-blog">
+                    <div class="img-wrapper">
+                        <img src="img/blog2.jpg" alt="Atención óptica">
+                    </div>
+                    <div class="contenido">
+                        <h4>¿Qué se hace en una óptica?</h4>
+                        <p class="meta">por Admin | Jun 9, 2024 | artículos</p>
+                        <p>En una óptica se brinda mucho más que solo lentes: entregamos asesoramiento personalizado para tu visión.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="tarjeta-blog">
+                    <div class="img-wrapper">
+                        <img src="img/Lentes3.jpg" alt="Ópticas Santiago">
+                    </div>
+                    <div class="contenido">
+                        <h4>¿Como es la calidad de nuestros lentes? </h4>
+                        <p class="meta">por Admin | Jun 4, 2024 | artículos</p>
+                        <p>Nuestro optica trabaja con los mejores laboratorios que cuentan con materiales de fabricación de alta calidad.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>   
+    <script src="js/carrito.js"></script>
+    <script src="js/cargar_pedido.js"></script>
+
+</body>
+</html>

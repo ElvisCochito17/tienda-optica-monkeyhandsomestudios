@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llama la Optica - Mis Pedidos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/pedido.css">
+</head>
+<body>
+     
+    <nav>
+        <div class="marca">
+            <img src="img/logo.png" alt="Logo de la tienda" class="logo">
+            <span>Llama la Optica</span>
+        </div>  
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="quienes_somos.html">Quienes Somos</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pedido.html">Pedidos</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li>
+                <a href="contacto.html" class="btn-carrito-nav">
+                    🛒 Carrito <span id="contador-carrito" class="badge">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main class="contenedor-pedidos">
+        <h2>Mis Pedidos</h2>
+        
+        <a href="detalle_pedido.html" class="tarjeta-resumen-link">
+            <div class="tarjeta-resumen">
+                <div class="tarjeta-icono">
+                    <img src="img/Lentes1.jpg" alt="Lentes de catálogo">
+                </div>
+                <div class="tarjeta-info">
+                    <p class="estado-entregado">En preparación</p>
+                    <h3>Llama la Optica - Sede Central</h3>
+                    <p class="cantidad-productos">0 productos</p>
+                </div>
+                <div class="tarjeta-precio">
+                    <strong>$ 0</strong>
+                </div>
+            </div>
+        </a>
+    </main>
+
+    <footer>
+        2024 Llama la Optica. Todos los derechos reservados.
+    </footer>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/cargar_pedido.js"></script>
+</body>
+</html>
