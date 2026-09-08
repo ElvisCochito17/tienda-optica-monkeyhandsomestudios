@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Llama la optica</title>
+    <link rel="stylesheet" href="css/administrador.css">
+</head>
+<body>
+    <div class="admin-contenedor">
+        
+        <!-- Barra lateral -->
+        <aside class="admin-sidebar">
+            <div class="admin-logo">
+                <h2>Llama la Optica</h2>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="#" class="activo" onclick="cambiarVista('vista-usuarios', this)">Gestión de Usuarios</a></li>
+                    <li><a href="#" onclick="cambiarVista('vista-productos', this)">Gestión de Productos</a></li>
+                    <li style="margin-top: 30px;"><a href="index.html" style="color: #ff6b6b;">Volver a la Tienda</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="admin-main">
+            <header class="admin-header">
+            <h1>Panel de Control Administrador</h1>
+            <!-- Movimos la imagen abajo del h1 para que salga a la derecha -->
+            <img src="img/llamalaoptica.png" alt="Logo Llama" class="logo-titulo">
+            </header>
+
+            <!-- VISTA 1: Usuarios -->
+            <section id="vista-usuarios" class="admin-vista" style="display: block;">
+                <h2>Listado de Usuarios</h2>
+                <table class="tabla-mantenedor">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Rol</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Gabriel Tapia</td>
+                            <td>gab.tapiav@duocuc.cl</td>
+                            <td>Admin</td>
+                            <td><button class="btn-editar">Editar</button> <button class="btn-eliminar">Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Vicente Muñoz</td>
+                            <td>vicente@ejemplo.cl</td>
+                            <td>Admin</td>
+                            <td><button class="btn-editar">Editar</button> <button class="btn-eliminar">Eliminar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- VISTA 2: Productos -->
+            <section id="vista-productos" class="admin-vista" style="display: none;">
+                <h2>Listado de Productos</h2>
+                <table class="tabla-mantenedor">
+                    <thead>
+                        <tr>
+                            <th>Cód.</th>
+                            <th>Nombre del Lente</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>Lentes de Sol Ecológicos</td>
+                            <td>$49.990</td>
+                            <td>15</td>
+                            <td><button class="btn-editar">Editar</button> <button class="btn-eliminar">Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Lentes Metálicos Mujer</td>
+                            <td>$29.990</td>
+                            <td>8</td>
+                            <td><button class="btn-editar">Editar</button> <button class="btn-eliminar">Eliminar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <!-- Conexión con el archivo JavaScript externo -->
+    <script src="js/admin.js"></script>
+</body>
+</html>
