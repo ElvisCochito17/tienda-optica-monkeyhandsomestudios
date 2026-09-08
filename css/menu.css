@@ -1,5 +1,6 @@
 
 
+
 nav ul {
   list-style: none;
   display: flex;
@@ -15,6 +16,8 @@ nav ul li a {
   padding: 15px;
   transition: background-color 0.3s ease;
   display: inline-block;
+  font-style: italic;
+  font-size: 20px;
 }
 
 nav ul li a:hover {

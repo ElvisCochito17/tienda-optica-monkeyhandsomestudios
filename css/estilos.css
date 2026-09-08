@@ -2,6 +2,9 @@
 @import url(menu.css);
 @import url(pie.css     );
 @import url(contacto.css);
+@import url(blog.css);
+@import url(carrito.css);
+@import url(catalogo.css);
 
 * {
     margin: 0;
@@ -15,24 +18,6 @@ body {
 
 }
 
-.detalles-producto {
-  list-style: none;         /* Quita los puntos negros */
-  padding: 0 15px;          /* Margen lateral para no chocar con los bordes */
-  margin: 15px 0;
-  font-size: 0.8rem;        /* Texto más pequeño para no competir con el título */
-  color: #555;
-  text-align: left;         /* La ficha técnica se lee mejor alineada a la izquierda */
-}
-
-.detalles-producto li {
-  padding: 5px 0;
-  border-bottom: 1px dashed #e0e0e0; /* Línea tenue divisoria */
-}
-
-.detalles-producto strong {
-  color: #222;
-}
-
 body {
   min-height: 100vh;           /* Obliga a la página a medir el 100% del alto de la pantalla */
   display: flex;
@@ -43,70 +28,9 @@ body {
 main {
   flex: 1;                     /* Hace que el contenido del medio crezca y empuje el footer al fondo */
 }
-
 .Bienvenida{
     padding: 0 40px;
     margin: 20px;
-}
-.Lentes {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    max-width: 1200px; /* Al limitar el ancho, obliga a que solo quepan 4 por fila */
-    margin: 30px auto;
-}
-
-
-.tarjeta-lentes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribuye el espacio para que el botón siempre quede abajo */
-    /* ...mantén el resto de propiedades que ya tienes... */
-}
-
-.tarjeta-lentes img{
-    width: 180px;
-    height: 180px;
-    border-radius: 15px;
-    background-color: white;
-}
-
-.tarjeta-lentes {
-    background-color: white;
-    color: black;
-    width: 240px;
-    padding: 20px 15px;
-    border-radius: 15px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.tarjeta-lentes h4{
-    color: black;
-    margin-bottom: 5px;
-    font-size: 16px;
-}
-
-.tarjeta-lentes p{
-    color: black;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.btn-ver{
-    text-decoration: none;
-    background-color:black;
-    color: white;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.btn-ver:hover{
-    background-color: dimgray;
 }
 
 /* Si es pantalla de PC (grande) */
